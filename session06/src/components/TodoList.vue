@@ -11,7 +11,7 @@
         <li class="item">
           <div class="left">
             <input
-              @change="handleUpdateStatus"
+              @change="handleUpdateStatus(item.id)"
               :checked="item.status"
               type="checkbox"
               :id="item.name"
@@ -74,9 +74,10 @@ const handlAddJob = () => {
   saveData("jobs", listJob);
 };
 const handleUpdateStatus = (id) => {
+  // console.log(1111);
   const findIndex = listJob.findIndex((item) => item.id === id);
   listJob[findIndex].status = !listJob[findIndex].status;
-  saveData("job", listJob);
+  saveData("jobs", listJob);
 };
 const handleDelete = (item) => {
   const isConfirmDelete = confirm(
@@ -108,20 +109,101 @@ watchEffect(() => {
 
 <style scoped>
 .container {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: #f0f0f0; */
 }
+
+.todo {
+  width: 500px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  padding: 20px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: auto;
+}
+
 .heading {
   text-align: center;
   font-size: 24px;
   padding-bottom: 24px;
-  /* text-decoration: line-through; */
 }
-.todo {
-  width: 600px;
-  border: 1px solid #dadada;
-  padding: 20px 24px;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-add {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-add:hover {
+  background-color: #45a049;
+}
+
+.list-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.label {
+  font-size: 16px;
+}
+
+.button-delete {
+  padding: 6px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-delete:hover {
+  background-color: #e53935;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
 }
 </style>
