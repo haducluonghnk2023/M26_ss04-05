@@ -5,9 +5,9 @@
 </template>
 
 <script setup>
-const emit = defineEmits(["messageSent"]); // Định nghĩa sự kiện phát ra
+const emit = defineEmits(["messageSent"]);
 const sendMessage = () => {
-  emit("messageSent", "This is a message from the child component!"); // Phát sự kiện kèm thông báo
+  emit("messageSent", "This is a message from the child component!");
 };
 </script>
 

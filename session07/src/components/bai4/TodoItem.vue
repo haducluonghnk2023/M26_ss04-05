@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>bai4</h1>
     <h1>-------- TodoItem Component --------</h1>
     <button @click="handleDelete">Delete</button>
   </div>
