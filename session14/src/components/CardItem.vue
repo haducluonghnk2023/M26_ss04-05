@@ -109,27 +109,25 @@ const decrementQuantity = () => {
   padding: 20px;
 }
 
-/* Phần hình ảnh chính */
 .main-image {
-  width: 400px; /* Cố định chiều rộng */
-  height: 400px; /* Cố định chiều cao */
-  object-fit: cover; /* Đảm bảo ảnh không bị méo, vừa khít trong khung */
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
-/* Phần hình ảnh nhỏ trong carousel */
 .thumbnail-row {
   margin-top: 10px;
 }
 
 .thumbnail-col {
-  max-width: 80px; /* Giới hạn chiều rộng cho mỗi thumbnail */
+  max-width: 80px;
 }
 
 .thumbnail {
-  width: 80px; /* Cố định chiều rộng */
-  height: 80px; /* Cố định chiều cao */
+  width: 80px;
+  height: 80px;
   cursor: pointer;
-  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  object-fit: cover;
 }
 
 .in-stock {
