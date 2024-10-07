@@ -1,5 +1,7 @@
 <template>
-  <div><p>Trang giới thiệu</p></div>
+  <div>
+    <h1>Contact Page</h1>
+  </div>
 </template>
 
 <script></script>

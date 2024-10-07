@@ -1,5 +1,8 @@
 <template>
-  <div><p>Trang giới thiệu</p></div>
+  <div>
+    <b>Product</b>
+    <router-view />
+  </div>
 </template>
 
 <script></script>

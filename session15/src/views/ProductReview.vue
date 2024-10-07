@@ -1,5 +1,5 @@
 <template>
-  <div><p>Trang giới thiệu</p></div>
+  <div><p>Trang đánh giá sản phẩm</p></div>
 </template>
 
 <script></script>

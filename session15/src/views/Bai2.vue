@@ -1,5 +1,5 @@
 <template>
-  <div><p>Trang giới thiệu</p></div>
+  <div><h3>Đây là trang liên hệ</h3></div>
 </template>
 
 <script></script>

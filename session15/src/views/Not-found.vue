@@ -1,5 +1,5 @@
 <template>
-  <div><p>Trang giới thiệu</p></div>
+  <div><h1>not found</h1></div>
 </template>
 
 <script></script>
